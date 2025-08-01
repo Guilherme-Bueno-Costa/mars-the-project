@@ -1,0 +1,96 @@
+.app-container {
+  background-image: url(../assets/image/chamfjord-3NMzkVXiV-w-unsplash.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: fit-content;
+  border: 2px solid red;
+}
+
+/* Header */
+.primary-info-container {
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+  border: 1px solid green;
+}
+
+.primary-info-container .header-info {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 12px;
+  margin: 144px 48px 0 48px;
+}
+
+.header-info h1 {
+  letter-spacing: 0.05rem;
+}
+
+.header-info hr {
+  background-color: var(--gray-3);
+  flex: 1;
+  height: 1px;
+  border: none;
+  border-radius: 2px;
+}
+
+.important-info {
+  margin: 0 48px;
+  display: flex;
+  gap: 64px;
+}
+
+.important-info .item {
+  margin: 16px 0;
+  text-align: center;
+}
+
+.item h3 {
+  margin-top: 2px;
+  padding: 6px 16px;
+  background-color: var(--gray-4);
+  font-size: var(--size-m);
+  width: 250px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Text content */
+.text-content {
+  margin: 0 48px;
+}
+
+.text-content p {
+  padding: 4px;
+  font-weight: 300;
+}
+
+.text-content h4 {
+  font-size: var(--size-s);
+  font-weight: 500;
+  margin: 48px 0 6px 0;
+  padding: 4px;
+}
+
+.text-content ul {
+  list-style-position: inside;
+  padding: 4px;
+}
+
+.text-content ul li {
+  font-size: var(--size-xs);
+  font-weight: 300;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.text-content .learn-more {
+  padding: 0;
+  font-weight: 500;
+}
+
+.primary-info-container .general-button {
+  width: fit-content;
+  margin: 48px 48px;
+}

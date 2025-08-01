@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.general-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--main-black);
+  padding: 6px 24px;
+  border-radius: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease-in;
+}
+
+.general-button:hover {
+  background-color: var(--blue-1);
+  color: var(--main-white);
+}
+
+/* Scroll button */
+.general-button.scroll-btn {
+  background-color: var(--main-black);
+  color: var(--main-white);
+  outline: 1px solid white;
+  padding: 4px 12px;
+  margin: 12px;
+}
+
+.general-button.scroll-btn:hover {
+  background-color: var(--brown-5);
+  outline: none;
+}
+
+/* Learn more button */
+.learn-more {
+  padding: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  transition: 0.25s ease-in-out;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  color: var(--brown-5);
+}

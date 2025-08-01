@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+/* Resets and pressetings */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--main-black);
+}
+
+.app-container {
+  width: 100%;
+}
+
+/* Showcase container */
+.showcase-container {
+  height: 100vh;
+}
+
+.showcase-container .showcase {
+  background-image: url(../assets/image/nicolas-lobos-NR_tXTuyTak-unsplash.jpg);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  clip-path: ellipse(100% 50% at 50% 40%);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase .showcase-content {
+  width: 70%;
+  padding: 12px;
+}
+
+.showcase-content h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  line-height: 1.4;
+}
+
+/* Mission Mars */
+.mission-mars-container {
+  margin: 64px auto;
+}
+
+.mission-mars-container .mission-mars-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0 48px;
+}
+
+.mission-mars-text-content h3 {
+  letter-spacing: 0.1rem;
+  padding: 12px;
+}
+.mission-mars-text-content p {
+  max-width: 55%;
+  text-align: center;
+  padding: 12px;
+}
+
+.mission-mars-carousel {
+  overflow: hidden;
+  margin: 0 96px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  gap: 28px;
+  margin: 0 48px;
+  padding: 12px;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+}
+
+.carousel-wrapper .card {
+  width: 175px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  border-radius: 4px;
+}
+
+.carousel-wrapper .card:hover {
+  scale: 1.2;
+}
+
+.buttons-container {
+  justify-self: center;
+  border-bottom: 1px solid white;
+}
+
+/* About */
+.about-container {
+  background-image: url(../assets/image/harsh-kumar-GbqbFuAmiIk-unsplash.jpg);
+  background-position: 50% 170px;
+  background-size: cover;
+  height: min(100vh, 500px);
+}
+
+.about-content {
+  margin: 64px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.about-content p {
+  width: 60%;
+}
+
+/* Statements */
+.statements-container {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  background-image: url(../assets/image/statement\ img.png);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: min(100vh, 600px);
+}
+
+/* How it works */
+.how-it-works-container {
+  margin: 64px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.how-it-works-content {
+  display: flex;
+  gap: 12px;
+  justify-content: space-around;
+}
+
+.how-it-works-content .card-hit {
+  width: min(60%, 200px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px;
+  font-size: 0.875rem;
+  height: 275px;
+}
+
+.card-hit i {
+  font-size: 1.75rem;
+}
+
+.card-hit p:nth-child(2) {
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.card-hit .learn-more {
+  margin-top: auto;
+}
+
+/* Next launch */
+.next-launch {
+  margin: 64px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/image/chamfjord-3NMzkVXiV-w-unsplash.jpg);
+  background-position: 100% 40%;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+
+.launch-content {
+  text-align: center;
+  padding: 32px;
+  background-color: var(--gray-4);
+  margin: 128px 0;
+  border-radius: 4px;
+}
+
+.launch-content h3:nth-child(1) {
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.launch-content h3:nth-child(2) {
+  font-size: 1.25rem;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+}
+
+.launch-content p {
+  margin: 12px 0;
+  font-size: 0.875rem;
+  letter-spacing: 0.05rem;
+}
+
+.launch-content .general-button {
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.general-button a:hover {
+  color: white;
+}

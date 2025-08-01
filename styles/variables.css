@@ -5,18 +5,20 @@
   --main-black: #000000;
   --main-white: #ffffff;
   --brown-1: #3c1c11;
-  --brwon-2: #4e1a14;
+  --brown-2: #4e1a14;
   --brown-3: #72251d;
   --brown-4: #7b2918;
   --brown-5: #a04427;
   --gray-1: #7f9cb7;
   --gray-2: #d5e2e5;
   --gray-3: #979797;
+  --gray-4: #141414;
   --blue-1: #30577b;
   --red-1: #830303;
   --green-1: #124925;
 
   /* typography */
+  --size-xg: 2.5rem;
   --size-gg: 2rem;
   --size-g: 1.5rem;
   --size-m: 1.25rem;
