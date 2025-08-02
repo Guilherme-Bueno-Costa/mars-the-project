@@ -1,4 +1,4 @@
-.app-container {
+.app-container.bg-application {
   background-image: url(../assets/image/chamfjord-3NMzkVXiV-w-unsplash.jpg);
   background-size: cover;
   background-position: right;

@@ -30,13 +30,14 @@ body {
 .navbar-container .navbar-content {
   display: flex;
   justify-content: space-between;
-  padding: 12px;
+  align-items: center;
+  padding: 8px;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(4px);
 }
 
 .navbar-content a img {
-  height: 84px;
+  height: 72px;
 }
 
 .navbar-content ul {

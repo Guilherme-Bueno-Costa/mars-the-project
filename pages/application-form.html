@@ -20,87 +20,201 @@
     <link rel="stylesheet" href="../components/navbar.css" />
     <link rel="stylesheet" href="../components/button.css" />
     <link rel="stylesheet" href="../components/footer.css" />
-    <link rel="stylesheet" href="../styles/application-form.css/" />
+    <link rel="stylesheet" href="../styles/application-form.css" />
 
-    <title>Mars - The Project - Application form</title>
+    <title>Mars - The Project - Application Page</title>
   </head>
   <body>
-    <div class="app-container">
+    <div class="app-container bg-application-form">
       <!-- Navbar -->
       <div class="navbar-container main-container">
         <div class="navbar-content" data-navbar-content>
-          <a href="../pages/index.html"
-            ><img src="../assets/image/logo.png" alt="Mars- The project logo"
-          /></a>
+          <a href="../pages/index.html">
+            <img src="../assets/image/logo.png" alt="Mars - The Project logo" />
+          </a>
           <ul>
             <li><a href="#">What it's like</a></li>
             <li><a href="#">Training</a></li>
-            <li><a href="#">Pricining</a></li>
+            <li><a href="#">Pricing</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Log in</a></li>
           </ul>
         </div>
       </div>
 
-      <!-- Form -->
       <div class="form-container main-container">
-        <h2>Create a profile and begin your jorney into space</h2>
-        <form action="">
-          <div class="form-row">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" required />
-          </div>
-          <div class="form-row">
-            <label for="last-namer">Last Name</label>
-            <input type="text" id="last-name" required />
-          </div>
-          <div class="form-row">
-            <label for="gender">Gender</label>
-            <div>
-              <select name="gender" id="gender" required>
-                <option value=""></option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-              </select>
+        <div class="form-content">
+          <h2>Create a profile and begin your journey into space</h2>
+          <form action="">
+            <!-- First Name -->
+            <div class="form-row">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" required />
             </div>
-          </div>
-          <div class="form-row">
-            <label for="birthday">Birthday</label>
-            <input type="date" id="birthday" required />
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" required />
-          </div>
-          <div class="form-row">
-            <label for="confirm-email">Confirm Email</label>
-            <input type="email" id="confirm-email" required />
-          </div>
-          <div class="form-row">
-            <label for="password">Password</label>
-            <input type="password" id="password" required />
-          </div>
-          <div class="form-row">
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" required />
-          </div>
-          <button
-            type="submit"
-            class="general-button"
-            onclick="location.href='../pages/application-page.html'"
-          >
-            Back
-          </button>
-          <button class="general-button">Continue application</button>
-        </form>
+
+            <!-- Last Name -->
+            <div class="form-row">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+
+            <!-- Gender -->
+            <div class="form-row">
+              <label for="gender">Gender</label>
+              <div>
+                <select name="gender" id="gender" required>
+                  <option value=""></option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Birthday -->
+            <div class="form-row">
+              <label for="birthday">Birthday</label>
+              <input type="date" id="birthday" name="birthday" required />
+            </div>
+
+            <!-- email -->
+            <div class="form-row" data-form-email>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" data-email required />
+              <div class="message-validation">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small></small>
+              </div>
+            </div>
+
+            <!-- email-confirmation -->
+            <div class="form-row" data-form-email-confirmation>
+              <label for="confirm-email">Confirm Email</label>
+              <input
+                type="email"
+                id="confirm-email"
+                name="confirm-email"
+                data-email-confirmation
+                required
+              />
+              <div class="message-validation checked">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small></small>
+              </div>
+            </div>
+
+            <!-- Password -->
+            <div class="form-row" data-form-password>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                data-password
+                required
+                minlength="6"
+              />
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-eye-slash"></i>
+              <div class="message-validation checked">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small></small>
+              </div>
+            </div>
+
+            <!-- Password confirmation -->
+            <div class="form-row" data-form-password-confirmation>
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                data-password-confirmation
+                required
+                minlength="6"
+              />
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-eye-slash"></i>
+              <div class="message-validation checked">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small></small>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <button
+              type="button"
+              class="general-button"
+              onclick="location.href='../pages/application-page.html'"
+            >
+              Back
+            </button>
+            <button type="submit" class="general-button" data-submit-button>
+              Continue application
+            </button>
+          </form>
+        </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <div class="footer-container main-container">
+      <div class="footer-content">
+        <div class="footer-itens">
+          <ul>
+            <li>
+              <a href="#"><strong>Get in Launch</strong></a>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="#"><strong>Career</strong></a>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Cookie Privacy</a></li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="#"><strong>Legal</strong></a>
+            </li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="logo">
+          <a href="../pages/index.html">
+            <img src="../assets/image/logo.png" alt="Mars - The Project logo" />
+          </a>
+          <div class="socials">
+            <a href="https://x.com/" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Scripts -->
     <script
       src="https://kit.fontawesome.com/84554bcbb0.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../scripts/script-apply.js"></script>
+    <script src="../scripts/application-form-script.js"></script>
   </body>
 </html>
